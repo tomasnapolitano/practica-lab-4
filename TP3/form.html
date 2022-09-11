@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2 - Form</title>
+    <link rel="stylesheet" href="./baseStyle.css">
+</head>
+<body>
+    <form action="./action.php" method="post">
+        <h1>Contact Form</h1>
+        <br>
+        <ol>
+            <li>
+                <h2>Your basic info</h2>
+                <h3>Name</h3>
+                <input type="text" name="firstname">
+                <h3>Email</h3>
+                <input type="email" name="email">
+                <h3>Password</h3>
+                <input type="password" name="password">
+                <h3>Birthday</h3>
+                <input type="date" name="birthday">
+                <h3>Sex</h3>
+                <input type="radio" name="sex" value="male"> Male 
+                <input type="radio" name="sex" value="female">Female
+                
+            </li>
+            <li>
+                <h2>Your profile</h2>
+                <h3>About you</h3>
+                <textarea name="aboutYou" cols="45" rows="3"></textarea>
+                <h3>Role</h3>
+                <select>
+                    <option value="frontEnd">Front-End Developer</option> 
+                    <option value="backEnd">Back-End Developer</option> 
+                    <option value="qa">Quality Assurance</option> 
+                    <option value="testing">Testing</option> 
+                </select> 
+                <h3>Interests</h3>
+                <input type="checkbox" name="dataBase" value="dataBase">Data Base 
+                <input type="checkbox" name="design" value="design">Design
+                <input type="checkbox" name="business" value="business">Business 
+                <input type="checkbox" name="unitTest" value="unitTest">Unit Test 
+                <br>
+                <input type="checkbox" name="cloudDev" value="cloudDev">Cloud Development 
+                <input type="checkbox" name="webDev" value="webDev">Web Development 
+            </li>    
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </ol>
+    </form>
+</body>
+</html>
